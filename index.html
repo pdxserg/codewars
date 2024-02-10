@@ -6,33 +6,97 @@
   <body>
     <h1>Our Elixirs</h1>
 
-    <h2>Green Tea Cooler</h2>
-    <p class="greentea">
-      <img src="../images/green.jpg">
-      Chock full of vitamins and minerals, this elixir
-      combines the healthful benefits of green tea with
-      a twist of chamomile blossoms and ginger root.
-    </p>
-    <h2>Raspberry Ice Concentration</h2>
-    <p class="raspberry greentea Blueberry">
-      <img src="../images/lightblue.jpg">
-    </p>
-    <h2>Blueberry Bliss Elixir</h2>
-    <p class="Blueberry">
-      <img src="../images/blue.jpg">
-      Blueberries and cherry essence mixed into a base
-      of elderflower herb tea will put you in a relaxed
-      state of bliss in no .
-    </p>
-    <h2>Cranberry Antioxidant Blast</h2>
-    <p>
-      <img src="../images/red.jpg">
-      Wake up to the flavors of cranberry and hibiscus
-      in this vitamin C rich elixir.
-    </p>
-    <h3>
-      <a href="../lounge.html">BACK</a>
-    </h3>
     
+    <script>
+//       var name = prompt("Как вас зовут?");
+// console.log("Привет, " + name);
+
+//       var likesCats = confirm("Тебе нравятся кошки?");
+// if (likesCats) {
+// console.log("Ты классная кошка!");
+// } else {
+// console.log("Что ж, не проблема. Все равно ты молодец!");}
+
+// alert("JavaScript это здорово!");
+    
+
+// var words = [
+// "программа",
+// "макака",
+// "прекрасный",
+// "оладушек"
+// ];
+// var word = words[Math.floor(Math.random() * words.length)];
+
+// var ansverArray =[];
+// for (i = 0; i < word.length; i++){
+//   ansverArray[i] = "_";
+// }
+//   var remainingLetters = word.length
+//   while (remainingLetters > 0) {
+
+//   alert(ansverArray.join(" "));
+
+//   var guess = prompt("Угадайте букву или нажмите Отмена для выхода из игры.");
+//  if (guess === null) {
+// break;  
+//  } else if (guess.length !== 1) {
+// alert("Пожалуйста, введите только одну букву.");
+// } else {
+//  // Обновляем состояние игры
+//  for (var j = 0; j < word.length; j++) {
+//  if (word[j] === guess) {
+// ansverArray[j] = guess;
+//  remainingLetters--;
+// }
+// }
+// }
+//   }
+// alert(ansverArray.join(" "));
+// alert("Отлично! Было загадано слово " + word);
+
+var words = [
+"rtt",
+"ueee",
+"hhhff",
+"bnnnbb",
+"ssdddddd"
+];
+// Выбираем случайное слово
+var word = words[Math.floor(Math.random() * words.length)];
+// Создаем итоговый массив
+var answerArray = [];
+for (var i = 0; i < word.length; i++) {
+answerArray[i] = "_";
+}
+var remainingLetters = word.length;
+// Игровой цикл
+while (remainingLetters > 0) {
+// Показываем состояние игры
+alert(answerArray.join(" "));
+// Запрашиваем вариант ответа
+var guess = prompt("Угадайте букву, или нажмите Отмена для выхода из игры.");
+if (guess === null) {
+// Выходим из игрового цикла
+break;
+} else if (guess.length !== 1) {
+alert("Пожалуйста, введите одиночную букву.");
+} else {
+// Обновляем состояние игры
+for (var j = 0; j < word.length; j++) {
+if (word[j] === guess) {
+answerArray[j] = guess;
+remainingLetters--;
+}
+}
+}
+// Конец игрового цикла
+}
+// Отображаем ответ и поздравляем игрока
+alert(answerArray.join(" "));
+alert("Отлично! Было загадано слово " + word);
+</script>
+
+
   </body>
 </html>
