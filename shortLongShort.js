@@ -12,9 +12,11 @@ function solution(a, b){
     // your code here
     if(a.length > b.length){
 
-        let s =b+a+b
+        let s =a+b+a
         return s
+    }else {
+        return b+a+b
     }
 }
 
-console.log(solution("2","33"))
+console.log(solution("222","33"))
