@@ -10,9 +10,8 @@
 
 function solution(a, b){
     // your code here
-    return (a.length < b.length){
-
-        let s =a+b+a
+    return (a.length < b.length)
+    ? a+b+a
         return s
     }else {
         return b+a+b
