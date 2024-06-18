@@ -8,12 +8,12 @@
 // ("1", "22") --> "1221"
 // // ("22", "1") --> "1221"
 
-function solution(a, b){
+function solution(a, b) {
     // your code here
     return (a.length < b.length)
-    ? a+b+a
-      :b+a+b
+        ? a + b + a
+        : b + a + b
 
 }
 
-console.log(solution("222","33"))
+console.log(solution("222", "33"))
