@@ -16,4 +16,4 @@ function solution(a, b) {
 
 }
 
-console.log(solution("222", "33"))
+console.log(solution("22", "1"))
