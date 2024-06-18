@@ -10,7 +10,7 @@
 
 function solution(a, b){
     // your code here
-    if(a.length < b.length){
+    return (a.length < b.length){
 
         let s =a+b+a
         return s
