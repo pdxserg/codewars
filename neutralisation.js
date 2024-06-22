@@ -16,3 +16,22 @@
 // ("-+-+-+", "-+-+-+") ➞ "-+-+-+"
 //
 // ("-++-", "-+-+") ➞ "-+00"
+
+
+function neutralise(s1, s2) {
+    // Here be dragons!
+
+    let a=[]
+    let b= 0
+    for(let i = 0; i < s1.length; i++){
+
+        if(s1[i] !== s2[i]){
+            a.push(b)
+        } else {
+            a.push(s1[i])
+        }
+
+
+    }return a.join('')
+
+}
