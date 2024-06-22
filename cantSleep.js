@@ -15,3 +15,16 @@
 //         assert.strictEqual(countSheep(3), "1 sheep...2 sheep...3 sheep...");
 //     });
 // });
+
+
+var countSheep = function (num) {
+    let s = ''
+    if (num === 0) {
+        return s
+    }
+    for (let i = 1; i <= num; i++) {
+        s = s + [i] + ' sheep...'
+//     s= s + `${i} sheep...`
+    }
+    return s
+}
