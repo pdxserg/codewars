@@ -15,3 +15,17 @@
 // '0' and '?' returns -1
 //
 // FUNDAMENTALS
+
+function sameCase(a, b) {
+    if (((a.charAt(0) >= 'A' && a.charAt(0) <= 'Z') && (b.charAt(0) >= 'A' && b.charAt(0) <= 'Z')) ||
+        ((a.charAt(0) >= 'a' && a.charAt(0) <= 'z') && (b.charAt(0) >= 'a' && b.charAt(0) <= 'z'))) {
+        return 1
+    }
+    if (((a.charAt(0) >= 'A' && a.charAt(0) <= 'Z') && (b.charAt(0) >= 'a' && b.charAt(0) <= 'z')) ||
+        ((a.charAt(0) >= 'a' && a.charAt(0) <= 'z') && (b.charAt(0) >= 'A' && b.charAt(0) <= 'Z'))) {
+        return 0;
+    }
+    return -1
+
+
+}
