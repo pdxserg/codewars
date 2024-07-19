@@ -1,15 +1,11 @@
-function updateLight(current) {
-    return current === "green"? "yeelow": current === "yeelow"? "red": "green"
-    //your code here!
-//   if(current === "green"){
-//    return "yellow"
-//   }
-//   if(current === "yellow"){
-//     return "red"
-//   } else {
-//     return "green"
-//   }
+function sortGiftCode(code){
+
+    return code.split("")
+        .sort()
+        .join("");
 
 }
 
-console.log(updateLight("green"))
+
+console.log(sortGiftCode("sdfgf"))
+console.log(a)
