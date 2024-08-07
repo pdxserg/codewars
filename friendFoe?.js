@@ -8,3 +8,9 @@
 // Input = ["Peter", "Stephen", "Joe"]
 // Output = []
 // // Input strings will only contain letters. Note: keep the original order of the names in the output.
+
+
+function friend(friends){
+    //your code here
+    return friends.filter(el => el.length === 4)
+}
