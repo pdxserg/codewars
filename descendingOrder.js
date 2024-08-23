@@ -10,3 +10,10 @@
 
 
 
+function descendingOrder(n){
+
+    let a=n.toString().split("")
+    let b = a.sort((a,b)=>b-a)
+    return  +b.join("")
+
+}
