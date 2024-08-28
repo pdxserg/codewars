@@ -7,3 +7,14 @@
 // Input -> Output
 //     [1, 1, 2] -> [1, 2]
 //     [1, 2, 1, 1, 3, 2] -> [1, 2, 3]
+
+function distinct(a) {
+    let b=a[0]
+    let c=[]
+    for(let i = 0; i<a.length; i++){
+        if(b!==a[i+1]){
+            c.push(a[i])
+        }
+    }
+    return c;
+}
