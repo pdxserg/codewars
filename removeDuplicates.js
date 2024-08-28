@@ -14,6 +14,7 @@ function distinct(a) {
     for(let i = 0; i<a.length; i++){
         if(b!==a[i+1]){
             c.push(a[i])
+            b=a[i+1]
         }
     }
     return c;
