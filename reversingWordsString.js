@@ -7,3 +7,16 @@
 // "Hello World" --> "World Hello"
 // "Hi There." --> "There. Hi"
 // Happy coding!
+
+function reverse(string){
+    //your code herefunction reverse(string){
+    //your code here
+    let arr = string.split(' ')
+    let newRow=[]
+    for (let i =arr.length-1; i>=0; i--){
+        newRow.push(arr[i])
+    }
+    return newRow.join(' ')
+
+}
+
