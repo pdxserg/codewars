@@ -8,3 +8,14 @@
 // oddOne([2,16,98,10,13,78]) // => 4
 // oddOne([4,-8,98,-12,-7,90,100]) // => 4
 // oddOne([2,4,6,8]) // => -1
+
+function oddOne(arr) {
+    // Code here
+    let a =-1
+    for(let i=0; i<arr.length; i++){
+        let poses =Math.abs(arr[i])
+        if(poses%2 ==1){
+            return i
+        }
+    }return a
+}
