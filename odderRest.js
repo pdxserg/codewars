@@ -10,12 +10,22 @@
 // oddOne([2,4,6,8]) // => -1
 
 function oddOne(arr) {
-    // Code here
-    let a =-1
+    // Code h
     for(let i=0; i<arr.length; i++){
-        let poses =Math.abs(arr[i])
-        if(poses%2 ==1){
+        if(arr[i]%2){
             return i
         }
-    }return a
+    }return -1
 }
+
+
+const Test = require('@codewars/test-compat');
+
+describe("Basic Tests", function(){
+    it("should pass basic tests", function(){
+        Test.assertEquals(oddOne([2,4,6,7,10]), 3);
+        Test.assertEquals(oddOne([2,16,98,10,13,78]), 4);
+        Test.assertEquals(oddOne([4,-8,98,-12,-7,90,100]), 4);
+        Test.assertEquals(oddOne([2,4,6,8]), -1);
+    });
+});
