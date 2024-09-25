@@ -35,7 +35,7 @@ function rpsls(pl1, pl2) {
 
 }
 
-onst assert=require('chai').assert
+const assert=require('chai').assert
 
 describe('rock paper scissors lizard spock', function() {
 
